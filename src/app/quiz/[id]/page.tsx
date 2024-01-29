@@ -1,4 +1,4 @@
-import QuizPage from "./pages";
+import QuizPage from "../pages";
 
 const QuizLevelPage = () => {
   return <QuizPage />;
