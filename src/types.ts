@@ -30,7 +30,7 @@ export const translateKeys = (data: OriginalData[]): TranslatedData[] => {
   return data.map((item) => ({
     id: item.序號,
     word: item.詞語,
-    level: item.級別,
+    level: item.級別.replace("*", ""),
     phonetic: item.注音,
     pinyin: item.漢拼,
     category: item["詞類/性質"],

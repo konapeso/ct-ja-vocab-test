@@ -1,11 +1,13 @@
 import React from "react";
 import { getAllVocabs } from "@/vocabAPI";
+import LevelTab from "../components/LevelTab";
 
 const List = async () => {
   const vocabs = await getAllVocabs();
-  console.log(vocabs);
+
   return (
     <div>
+      <LevelTab />
       {vocabs.map((vocab) => (
         <div key={vocab.id}>
           <p>{vocab.word}</p>
