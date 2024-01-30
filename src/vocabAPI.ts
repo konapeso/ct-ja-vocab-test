@@ -1,18 +1,23 @@
-// import { Article } from "./types";
+import { OriginalData, TranslatedData, translateKeys } from "./types";
 // import { notFound } from "next/navigation";
 
-// export const getAllArticles = async (): Promise<Article[]> => {
-//   const res = await fetch("http://localhost:3001/posts", { cache: "no-store" }); //SSR
+// 全データを取得するAPI関数
+export const getAllVocabs = async (): Promise<TranslatedData[]> => {
+  try {
+    const res = await fetch("http://localhost:3001/vocabs", {
+      cache: "no-store",
+    });
 
-//   if (!res.ok) {
-//     throw new Error("Errorが発生しました");
-//   }
+    if (!res.ok) {
+      throw new Error("Errorが発生しました");
+    }
 
-//   await new Promise((resolve) => setTimeout(resolve, 1000)); //SSR
-
-//   const articles = await res.json();
-//   return articles;
-// };
+    const originalData: OriginalData[] = await res.json();
+    return translateKeys(originalData);
+  } catch (error) {
+    throw new Error("データの取得に失敗しました");
+  }
+};
 
 // export const getDetailArticle = async (id: string): Promise<Article> => {
 //   const res = await fetch(`http://localhost:3001/posts/${id}`, {
