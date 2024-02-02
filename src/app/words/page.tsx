@@ -18,7 +18,7 @@ const List = async ({
 
   return (
     <div className="grid h-full gap-2 px-4 py-6 lg:px-8">
-      <h1 className="text-2xl font-bold">ルートページ</h1>
+      <h1 className="text-2xl font-bold">Word List</h1>
       <Tabs defaultValue={tabValue} className="h-full space-y-6">
         <div className="flex items-center justify-between">
           <TabsList>
