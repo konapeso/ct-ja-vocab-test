@@ -13,7 +13,7 @@ export default function Home() {
             クイズを始める / Start Quiz
           </button>
         </Link>
-        <Link href="/about">
+        <Link href="/words">
           <button className="bg-gray-500 hover:bg-gray-600 text-white py-3 px-6 rounded-lg block text-center">
             単語一覧 / Word List
           </button>
