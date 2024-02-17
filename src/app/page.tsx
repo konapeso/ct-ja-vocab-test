@@ -9,7 +9,7 @@ export default function Home() {
         Let&rsquo;s give it a try!
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <Link href="/quiz-selection">
+        <Link href="/quiz">
           <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg block text-center">
             Start Quiz
           </button>
