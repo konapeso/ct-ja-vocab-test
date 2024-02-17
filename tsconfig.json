@@ -28,7 +28,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/**/*.ts",
-    "src/app/quiz/[id]"
+    "src/app/quiz/start/[data]"
   ],
   "exclude": ["node_modules"]
 }

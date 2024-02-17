@@ -12,7 +12,7 @@ const Header = () => {
       <div>
         <nav>
           <Link
-            href="/quiz-selection"
+            href="/quiz"
             className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 mx-2 rounded-lg"
           >
             Quiz
