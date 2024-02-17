@@ -12,7 +12,7 @@ const List = async ({
     [key: string]: string | string[] | undefined;
   };
 }) => {
-  const tabValue = (searchParams.value as string) || "tab1";
+  const tabValue = (searchParams.value as string) || "第1級";
   const vocabs = await getAllVocabs();
   const filteredVocabs = vocabs.filter((vocab) => vocab.level === tabValue);
 
