@@ -13,11 +13,6 @@ const QuizStart = () => {
   const level = searchParams?.get("level");
   const numberOfQuestions = searchParams?.get("numberOfQuestions");
   console.log("mode", mode);
-  // const params = {
-  //   mode: searchParams?.get("mode"),
-  //   level: searchParams?.get("level"),
-  //   numberOfQuestions: searchParams?.get("numberOfQuestions"),
-  // };
 
   return (
     <div>
