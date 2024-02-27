@@ -7,13 +7,13 @@ This app is a quiz app for basic to intermediate level Traditional Chinese words
 1. First, clone the repository.
 
 ```bash
-git clone <[repository URL](https://github.com/konapeso/ct-ja-vocab-test.git)>
+git clone https://github.com/konapeso/ct-ja-vocab-test.git
 ```
 
 2. Navigate to the project directory.
 
 ```bash
-cd <ct-ja-vocab-test>
+cd ct-ja-vocab-test
 ```
 
 3. Install the necessary packages.
