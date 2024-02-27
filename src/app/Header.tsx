@@ -24,7 +24,7 @@ const Header = () => {
             Words
           </Link>
           <Link
-            href="/contsct"
+            href="/contact"
             className="bg-green-500 hover:bg-green-600 text-white py-3 px-6 mx-2 rounded-lg"
           >
             Contact
